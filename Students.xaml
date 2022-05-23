@@ -1,0 +1,25 @@
+﻿<Window x:Class="StudentDing.Students"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:StudentDing"
+        mc:Ignorable="d"
+        Title="Students" Height="450" Width="800">
+    <Grid>
+        <DataGrid x:Name="STUD" HorizontalAlignment="Center" Height="168" VerticalAlignment="Top" Width="780" d:ItemsSource="{d:SampleData ItemCount=5}" FontSize="22" SelectionChanged="STUD_SelectionChanged"/>
+        <Label Content="Name" HorizontalAlignment="Left" Height="57" Margin="10,0,0,0" VerticalAlignment="Center" Width="205" FontSize="22"/>
+        <Label Content="Surname" HorizontalAlignment="Left" Height="54" Margin="10,266,0,0" VerticalAlignment="Top" Width="205" FontSize="22"/>
+        <Label Content="Group ID" HorizontalAlignment="Left" Height="53" Margin="10,354,0,0" VerticalAlignment="Top" Width="205" FontSize="22"/>
+        <TextBox x:Name="SN" HorizontalAlignment="Left" Height="57" Margin="241,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" Width="200" FontSize="22"/>
+        <TextBox x:Name="SS" HorizontalAlignment="Left" Height="54" Margin="241,270,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" FontSize="22"/>
+        <TextBox x:Name="SL" HorizontalAlignment="Left" Height="53" Margin="640,354,0,0" TextWrapping="Wrap" Text="Selected" VerticalAlignment="Top" Width="116" FontSize="22"/>
+        <Label Content="Selected" HorizontalAlignment="Left" Height="53" Margin="464,354,0,0" VerticalAlignment="Top" Width="142" FontSize="22"/>
+        <Button x:Name="HB" Content="Home" HorizontalAlignment="Left" Height="62" Margin="464,173,0,0" VerticalAlignment="Top" Width="142" FontSize="22" Click="HB_Click"/>
+        <Button x:Name="AD" Content="Add" HorizontalAlignment="Left" Height="62" Margin="640,173,0,0" VerticalAlignment="Top" Width="142" FontSize="22" Click="AD_Click"/>
+        <Button x:Name="DB" Content="Delete" HorizontalAlignment="Left" Height="62" Margin="464,262,0,0" VerticalAlignment="Top" Width="142" FontSize="22" Click="DB_Click"/>
+        <Button x:Name="ED" Content="Edit" HorizontalAlignment="Left" Height="62" Margin="640,262,0,0" VerticalAlignment="Top" Width="142" FontSize="22" Click="ED_Click"/>
+        <ComboBox x:Name="GI" HorizontalAlignment="Left" Height="53" Margin="241,354,0,0" VerticalAlignment="Top" Width="200" FontSize="22" SelectionChanged="GI_SelectionChanged"/>
+
+    </Grid>
+</Window>

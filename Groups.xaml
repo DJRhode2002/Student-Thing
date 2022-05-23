@@ -1,0 +1,21 @@
+﻿<Window x:Class="StudentDing.Groups"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:StudentDing"
+        mc:Ignorable="d"
+        Title="Groups" Height="450" Width="800">
+    <Grid>
+        <DataGrid x:Name="SUBJ" HorizontalAlignment="Left" Height="176" VerticalAlignment="Top" Width="790" d:ItemsSource="{d:SampleData ItemCount=5}" FontSize="22" SelectionChanged="SUBJ_SelectionChanged"/>
+        <Label Content="Title" HorizontalAlignment="Left" Height="53" Margin="34,217,0,0" VerticalAlignment="Top" Width="160" FontSize="22"/>
+        <TextBox x:Name="TT" HorizontalAlignment="Left" Height="62" Margin="34,316,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="160" FontSize="22"/>
+        <TextBox x:Name="SL" HorizontalAlignment="Left" Height="53" Margin="262,316,0,0" TextWrapping="Wrap" Text="Selected" VerticalAlignment="Top" Width="157" FontSize="22"/>
+        <TextBox x:Name="TL" HorizontalAlignment="Left" Height="53" Margin="262,217,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="157"/>
+        <Button x:Name="HM" Content="Home" HorizontalAlignment="Left" Height="53" Margin="486,217,0,0" VerticalAlignment="Top" Width="125" FontSize="22" Click="HM_Click"/>
+        <Button x:Name="Ad" Content="Add" HorizontalAlignment="Left" Height="53" Margin="643,294,0,0" VerticalAlignment="Top" Width="125" FontSize="22" Click="Ad_Click"/>
+        <Button x:Name="DL" Content="Delete" HorizontalAlignment="Left" Height="53" Margin="486,294,0,0" VerticalAlignment="Top" Width="125" FontSize="22" Click="DL_Click"/>
+        <Button x:Name="ED" Content="Edit" HorizontalAlignment="Left" Height="53" Margin="643,217,0,0" VerticalAlignment="Top" Width="125" FontSize="22" Click="ED_Click"/>
+
+    </Grid>
+</Window>

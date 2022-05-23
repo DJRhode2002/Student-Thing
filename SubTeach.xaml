@@ -1,0 +1,30 @@
+﻿<Window x:Class="StudentDing.SubTeach"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:StudentDing"
+        mc:Ignorable="d"
+        Title="SubTeach" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="9*"/>
+            <ColumnDefinition Width="71*"/>
+        </Grid.ColumnDefinitions>
+        <Label Content="Subject" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="57" Margin="10,200,0,0" VerticalAlignment="Top" Width="106" FontSize="22"/>
+        <Label Content="Teacher" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="57" Margin="10,280,0,0" VerticalAlignment="Top" Width="106" FontSize="22"/>
+        <Label Content="Group" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="57" Margin="10,361,0,0" VerticalAlignment="Top" Width="106" FontSize="22"/>
+        <ComboBox x:Name="SI" Grid.Column="1" HorizontalAlignment="Left" Height="57" Margin="60,200,0,0" VerticalAlignment="Top" Width="124" FontSize="22"/>
+        <ComboBox x:Name="TI" Grid.Column="1" HorizontalAlignment="Left" Height="57" Margin="60,280,0,0" VerticalAlignment="Top" Width="124" FontSize="22"/>
+        <ComboBox x:Name="GI" Grid.Column="1" HorizontalAlignment="Left" Height="57" Margin="64,361,0,0" VerticalAlignment="Top" Width="120" FontSize="22"/>
+        <Button x:Name="Home" Grid.Column="1" Content="Home" HorizontalAlignment="Right" Height="54" Margin="0,228,180,0" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.186,0.82" FontSize="22" Click="Home_Click"/>
+        <TextBox x:Name="TL" Grid.Column="1" HorizontalAlignment="Left" Height="54" Margin="233,200,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="122" FontSize="22"/>
+        <Label Grid.Column="1" Content="Selected" HorizontalAlignment="Left" Height="57" Margin="233,280,0,0" VerticalAlignment="Top" Width="122" FontSize="22"/>
+        <TextBox x:Name="SL" Grid.Column="1" HorizontalAlignment="Left" Height="57" Margin="233,361,0,0" TextWrapping="Wrap" Text="Selected Id" VerticalAlignment="Top" Width="122" FontSize="22"/>
+        <DataGrid x:Name="ST" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="195" VerticalAlignment="Top" Width="790" d:ItemsSource="{d:SampleData ItemCount=5}" FontSize="22" SelectionChanged="ST_SelectionChanged_1"/>
+        <Button Grid.Column="1" Content="Delete" HorizontalAlignment="Left" Height="54" Margin="562,308,0,0" VerticalAlignment="Top" Width="120" FontSize="24" Click="Button_Click"/>
+        <Button x:Name="ED" Grid.Column="1" Content="Edit" HorizontalAlignment="Left" Height="54" Margin="410,308,0,0" VerticalAlignment="Top" Width="120" FontSize="22" Click="ED_Click"/>
+        <Button x:Name="AD" Grid.Column="1" Content="Add" HorizontalAlignment="Left" Height="55" Margin="562,227,0,0" VerticalAlignment="Top" Width="120" FontSize="22" Click="AD_Click"/>
+
+    </Grid>
+</Window>

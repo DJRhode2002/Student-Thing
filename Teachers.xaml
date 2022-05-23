@@ -1,0 +1,24 @@
+﻿<Window x:Class="StudentDing.Teachers"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:StudentDing"
+        mc:Ignorable="d"
+        Title="Teachers" Height="475" Width="809">
+    <Grid>
+        <DataGrid x:Name="Teach" HorizontalAlignment="Center" Height="207" Margin="0,10,0,0" VerticalAlignment="Top" Width="800" d:ItemsSource="{d:SampleData ItemCount=5}" SelectionChanged="Teach_SelectionChanged" FontSize="22"/>
+        <Label Content="Name" FontSize="22" HorizontalAlignment="Left" Height="53" Margin="17,247,0,0" VerticalAlignment="Top" Width="158"/>
+        <Label Content="Surname" FontSize="22" HorizontalAlignment="Left" Height="53" Margin="17,329,0,0" VerticalAlignment="Top" Width="158"/>
+        <TextBox x:Name="NN" HorizontalAlignment="Left" Height="53" Margin="218,247,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="182" FontSize="22"/>
+        <TextBox x:Name="SN" HorizontalAlignment="Left" Height="53" Margin="218,329,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="182" FontSize="22"/>
+        <TextBox x:Name="SL" HorizontalAlignment="Left" Height="52" Margin="636,222,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="154" FontSize="22"/>
+        <Label Content="Selected" HorizontalAlignment="Left" Height="44" Margin="450,222,0,0" VerticalAlignment="Top" Width="128" FontSize="22"/>
+        <Button x:Name="ED" Content="Edit" HorizontalAlignment="Left" Height="56" Margin="450,300,0,0" VerticalAlignment="Top" Width="128" FontSize="22" Click="ED_Click"/>
+        <Button x:Name="DE" Content="Delete" HorizontalAlignment="Left" Height="56" Margin="636,368,0,0" VerticalAlignment="Top" Width="127" FontSize="22" Click="DE_Click"/>
+        <Button x:Name="AD" Content="Add" HorizontalAlignment="Left" Height="56" Margin="636,300,0,0" VerticalAlignment="Top" Width="123" FontSize="22" Click="AD_Click"/>
+        <Button x:Name="H" Content="Home" HorizontalAlignment="Left" Height="56" Margin="450,368,0,0" VerticalAlignment="Top" Width="128" FontSize="22" Click="H_Click"/>
+        <TextBox x:Name="TL" HorizontalAlignment="Left" Height="53" Margin="51,396,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="284" FontSize="22"/>
+
+    </Grid>
+</Window>
